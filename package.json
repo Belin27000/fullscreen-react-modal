@@ -1,0 +1,51 @@
+{
+  "name": "fullscreenreact-modal",
+  "description": "fullScreen react modal which can be configured with the text you want and picture",
+  "author": "Yann LECERF",
+  "keywords": [
+    "react",
+    "TypeScript",
+    "modal",
+    "fullScreen",
+    "Sass"
+  ],
+  "version": "1.0.1",
+  "private": false,
+  "main": "dist/modal.tsx",
+  "module": "dist/modal.tsx",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belin27000/fullscreen-react-modal.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
